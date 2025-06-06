@@ -5,6 +5,17 @@ import { CalendarIcon, ArrowLeft, Share2, Bookmark } from "lucide-react";
 import { getNoticias } from "@/lib/google-sheets";
 import { notFound } from "next/navigation";
 
+export async function generateStaticParams() {
+  try {
+    const noticias = await getNoticias();
+    return noticias.map((noticia) => ({
+      id: noticia.id,
+    }));
+  } catch (error) {
+    return [{ id: "1" }, { id: "2" }, { id: "3" }];
+  }
+}
+
 interface NoticiasPageProps {
   params: {
     id: string;
@@ -17,15 +28,15 @@ export async function generateMetadata({ params }: NoticiasPageProps) {
 
   if (!noticia) {
     return {
-      title: "Noticia no encontrada | Colegio Corazón de Jesús",
+      title: "Noticia no encontrada | Instituto Corazón de Jesús",
     };
   }
 
   return {
-    title: `${noticia.titulo} | Colegio Corazón de Jesús`,
+    title: `${noticia.titulo} | Instituto Corazón de Jesús`,
     description:
       noticia.resumen ||
-      "Noticia del Colegio Corazón de Jesús en Balvanera, Buenos Aires.",
+      "Noticia del Instituto Corazón de Jesús en Balvanera, Buenos Aires.",
   };
 }
 

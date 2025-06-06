@@ -1,0 +1,24 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.institutocorazondejesus.edu.ar/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
+
+# Specific directives
+Allow: /images/
+Allow: /institucional
+Allow: /niveles/
+Allow: /propuesta-complementaria
+Allow: /noticias/
+Allow: /contacto
+
+# Disallow admin or private areas
+Disallow: /admin
+Disallow: /_next/
+Disallow: /api/
+
+# Host
+Host: https://www.institutocorazondejesus.edu.ar 

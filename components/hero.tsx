@@ -4,16 +4,16 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="relative bg-white overflow-hidden">
+    <section className="hero-critical">
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-r from-[black]/80 to-[black]/20 mix-blend-multiply z-10" />
-        <Image
+        <div className="hero-overlay" />
+        <img
           src="/images/header.webp"
           alt="Instituto Corazón de Jesús"
-          width={1600}
-          height={800}
-          className="w-full h-full object-cover"
-          priority
+          className="hero-image"
+          loading="eager"
+          fetchPriority="high"
+          decoding="async"
         />
       </div>
 

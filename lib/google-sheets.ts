@@ -125,7 +125,89 @@ export async function getSheetData(sheetName: string) {
   }
 }
 
+// Datos estáticos para la exportación
+const noticiasEstaticas: any[] = [];
+
+const anunciosEstaticos: any[] = [];
+
+const popupEstatico: any = null;
+
+export async function getPopupData() {
+  if (process.env.NODE_ENV === "production") {
+    return popupEstatico;
+  }
+
+  if (!sheets) {
+    return null;
+  }
+
+  try {
+    const response = await sheets.spreadsheets.values.get({
+      spreadsheetId: SPREADSHEET_ID,
+      range: `noticias!B10:B12`,
+    });
+
+    const rows = response.data.values;
+    if (!rows || rows.length < 3) {
+      return null;
+    }
+
+    const checkbox = rows[0] && rows[0][0] ? rows[0][0] : "";
+    const title = rows[1] && rows[1][0] ? rows[1][0].trim() : "";
+    const text = rows[2] && rows[2][0] ? rows[2][0].trim() : "";
+
+    const activo =
+      checkbox === "TRUE" ||
+      checkbox === "true" ||
+      checkbox === true ||
+      checkbox === "✓" ||
+      checkbox === "1" ||
+      checkbox === 1 ||
+      (typeof checkbox === "boolean" && checkbox);
+
+    if (activo && title && text) {
+      return {
+        active: true,
+        title: title,
+        message: text,
+        buttonText: "Más información",
+        buttonLink: "/contacto",
+        imagen: null,
+      };
+    }
+
+    return null;
+  } catch (error) {
+    return null;
+  }
+}
+
 export async function getNoticias() {
-  const data = await getSheetData("noticias");
-  return data.filter((item) => "titulo" in item);
+  try {
+    const data = await getSheetData("noticias");
+    return data;
+  } catch (error) {
+    return noticiasEstaticas;
+  }
+}
+
+export async function getAnuncios() {
+  // En producción con hosting estático, retornamos datos estáticos
+  if (process.env.NODE_ENV === "production") {
+    return anunciosEstaticos;
+  }
+
+  // Código original para desarrollo
+  try {
+    const data = await getSheetData("anuncios");
+    return data.map((row: any, index: number) => ({
+      id: (index + 1).toString(),
+      titulo: row[0] || "",
+      contenido: row[1] || "",
+      activo: row[2] === "TRUE" || row[2] === "true" || row[2] === "1",
+      fecha: row[3] || new Date().toISOString().split("T")[0],
+    }));
+  } catch (error) {
+    return anunciosEstaticos;
+  }
 }

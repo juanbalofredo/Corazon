@@ -65,7 +65,7 @@ export default function ContactoPage() {
                   <input
                     type="hidden"
                     name="_subject"
-                    value="Nueva consulta desde sitio web - Colegio Corazon de Jesus"
+                    value="Nueva consulta desde sitio web - Instituto Corazon de Jesus"
                   />
                   <input type="hidden" name="_template" value="table" />
                   <input type="hidden" name="_captcha" value="false" />
@@ -388,8 +388,8 @@ export default function ContactoPage() {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Ubicación del Colegio Corazón de Jesús"
-                aria-label="Mapa mostrando la ubicación del Colegio Corazón de Jesús en Ayacucho 474, Balvanera, Buenos Aires"
+                title="Ubicación del Instituto Corazón de Jesús"
+                aria-label="Mapa mostrando la ubicación del Instituto Corazón de Jesús en Ayacucho 474, Balvanera, Buenos Aires"
               ></iframe>
             </div>
 
@@ -415,7 +415,7 @@ export default function ContactoPage() {
                     <p className="font-medium">Colectivos</p>
                     <p className="text-sm text-gray-600">
                       Líneas 12, 37, 39, 60, 101, 124, 132, 150 y 180 tienen
-                      paradas cercanas al colegio.
+                      paradas cercanas al Instituto.
                     </p>
                   </div>
                 </div>

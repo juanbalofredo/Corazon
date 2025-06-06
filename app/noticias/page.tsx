@@ -1,23 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { CalendarIcon, Search } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { getNoticias } from "@/lib/google-sheets";
 
 export const metadata = {
-  title: "Noticias y Novedades | Colegio Corazón de Jesús",
+  title: "Noticias y Novedades | Instituto Corazón de Jesús",
   description:
-    "Mantente informado sobre las actividades, eventos y novedades del Colegio Corazón de Jesús en Balvanera, Buenos Aires.",
+    "Mantente informado sobre las actividades, eventos y novedades del Instituto Corazón de Jesús en Balvanera, Buenos Aires.",
   keywords:
-    "noticias colegio Balvanera, eventos escolares Buenos Aires, actividades Colegio Corazón de Jesús, novedades educativas",
+    "noticias colegio Balvanera, eventos escolares Buenos Aires, actividades Instituto Corazón de Jesús, novedades educativas",
 };
 
 export default async function NoticiasPage() {
@@ -76,15 +70,6 @@ export default async function NoticiasPage() {
                 <CardContent className="flex-grow">
                   <p className="text-gray-600">{noticia.resumen}</p>
                 </CardContent>
-                <CardFooter>
-                  <Button
-                    asChild
-                    variant="outline"
-                    className="w-full border-[#0a2d8f] text-[#0a2d8f] hover:bg-[#0a2d8f] hover:text-white"
-                  >
-                    <Link href={`/noticias/${noticia.id}`}>Leer más</Link>
-                  </Button>
-                </CardFooter>
               </Card>
             ))}
           </div>

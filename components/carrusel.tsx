@@ -8,13 +8,19 @@ export default function Carrusel() {
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
   const [translateX, setTranslateX] = useState(0);
+  const [isLoaded, setIsLoaded] = useState(false);
   const carouselRef = useRef<HTMLDivElement>(null);
 
   const images = Array.from({ length: 10 }, (_, i) => `car${i + 1}`);
   const maxIndex = images.length - 3;
 
   useEffect(() => {
-    if (!isDragging) {
+    const timer = setTimeout(() => setIsLoaded(true), 1000);
+    return () => clearTimeout(timer);
+  }, []);
+
+  useEffect(() => {
+    if (!isDragging && isLoaded) {
       const interval = setInterval(() => {
         setCurrentIndex((prevIndex) =>
           prevIndex === maxIndex ? 0 : prevIndex + 1
@@ -23,7 +29,7 @@ export default function Carrusel() {
 
       return () => clearInterval(interval);
     }
-  }, [maxIndex, isDragging]);
+  }, [maxIndex, isDragging, isLoaded]);
 
   const handleMouseDown = (e: React.MouseEvent) => {
     setIsDragging(true);
@@ -65,6 +71,22 @@ export default function Carrusel() {
     handleMouseUp();
   };
 
+  if (!isLoaded) {
+    return (
+      <section className="py-8">
+        <div className="container mx-auto px-4">
+          <div className="relative h-48 overflow-hidden bg-gray-200 rounded-lg animate-pulse">
+            <div className="flex gap-4 h-full">
+              {[1, 2, 3].map((_, index) => (
+                <div key={index} className="flex-1 bg-gray-300 rounded-lg" />
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
   return (
     <section className="py-8">
       <div className="container mx-auto px-4">
@@ -87,15 +109,18 @@ export default function Carrusel() {
                   key={currentIndex + index}
                   className="flex-1 relative rounded-lg overflow-hidden shadow-md"
                 >
-                  <Image
+                  <img
                     src={`/images/${imageName}.webp`}
                     alt={`Imagen ${currentIndex + index + 1}`}
-                    fill
-                    className="object-cover transition-all duration-500 ease-out"
+                    className="w-full h-full object-cover transition-all duration-500 ease-out"
                     draggable={false}
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    quality={95}
-                    priority={index === 0}
+                    loading="lazy"
+                    decoding="async"
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "cover",
+                    }}
                   />
                 </div>
               ))}

@@ -15,41 +15,43 @@ interface Announcement {
   imagen?: string | null;
 }
 
-export default function PopupAnnouncement() {
-  const [announcement, setAnnouncement] = useState<Announcement | null>(null);
+interface PopupAnnouncementProps {
+  popupData?: Announcement | null;
+}
+
+export default function PopupAnnouncement({
+  popupData,
+}: PopupAnnouncementProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    const fetchAnnouncement = async () => {
-      try {
-        const response = await fetch("/api/sheets?sheet=anuncios");
-        if (!response.ok) {
-          throw new Error("Error al obtener anuncios");
-        }
-        const data = await response.json();
+    if (popupData && popupData.active && popupData.title && popupData.message) {
+      const popupShown = sessionStorage.getItem("popup-shown");
 
-        if (data && data.length > 0 && data[0].active) {
-          setAnnouncement(data[0]);
-
-          const popupShown = sessionStorage.getItem("popup-shown");
-          if (!popupShown) {
-            setIsOpen(true);
-            sessionStorage.setItem("popup-shown", "true");
-          }
-        }
-      } catch (error) {
-        // Error silencioso para evitar romper la app
+      if (!popupShown) {
+        setIsOpen(true);
+        sessionStorage.setItem("popup-shown", "true");
+      } else {
+        console.error("Popup ya se mostró anteriormente");
       }
-    };
-
-    fetchAnnouncement();
-  }, []);
+    } else {
+      console.error("Condiciones no cumplidas para mostrar popup");
+    }
+  }, [popupData]);
 
   const handleClose = () => {
     setIsOpen(false);
   };
 
-  if (!announcement || !isOpen) return null;
+  if (
+    !popupData ||
+    !popupData.active ||
+    !popupData.title ||
+    !popupData.message ||
+    !isOpen
+  ) {
+    return null;
+  }
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50">
@@ -63,11 +65,11 @@ export default function PopupAnnouncement() {
         </button>
 
         <div className="text-center">
-          {announcement.imagen ? (
+          {popupData.imagen ? (
             <div className="relative w-full h-32 mb-4 rounded-lg overflow-hidden">
               <Image
-                src={announcement.imagen || "/placeholder.svg"}
-                alt={announcement.title}
+                src={popupData.imagen || "/placeholder.svg"}
+                alt={popupData.title}
                 fill
                 className="object-cover"
               />
@@ -79,10 +81,10 @@ export default function PopupAnnouncement() {
           )}
 
           <h3 className="text-xl font-bold text-[#0a2d8f] mb-3">
-            {announcement.title}
+            {popupData.title}
           </h3>
           <p className="text-gray-600 mb-6 leading-relaxed">
-            {announcement.message}
+            {popupData.message}
           </p>
 
           <div className="flex gap-3 justify-center">
@@ -91,9 +93,7 @@ export default function PopupAnnouncement() {
               className="bg-[#0a2d8f] hover:bg-[#081d5e]"
               onClick={handleClose}
             >
-              <Link href={announcement.buttonLink}>
-                {announcement.buttonText}
-              </Link>
+              <Link href={popupData.buttonLink}>{popupData.buttonText}</Link>
             </Button>
             <Button
               variant="outline"

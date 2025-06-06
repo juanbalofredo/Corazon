@@ -65,7 +65,7 @@ export default function Contacto() {
                   <input
                     type="hidden"
                     name="_subject"
-                    value="Nueva consulta desde sitio web - Colegio Corazon de Jesus"
+                    value="Nueva consulta desde sitio web - Instituto Corazon de Jesus"
                   />
                   <input type="hidden" name="_template" value="table" />
                   <input type="hidden" name="_captcha" value="false" />
@@ -208,8 +208,8 @@ export default function Contacto() {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Ubicación del Colegio Corazón de Jesús"
-                aria-label="Mapa mostrando la ubicación del Colegio Corazón de Jesús en Ayacucho 474, Balvanera, Buenos Aires"
+                title="Ubicación del Instituto Corazón de Jesús"
+                aria-label="Mapa mostrando la ubicación del Instituto Corazón de Jesús en Ayacucho 474, Balvanera, Buenos Aires"
               ></iframe>
             </div>
           </div>

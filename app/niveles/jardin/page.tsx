@@ -5,11 +5,29 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Heart, Users, BookOpen, Gamepad2 } from "lucide-react";
 
 export const metadata = {
-  title: "Nivel Inicial | Instituto Corazón de Jesús",
+  title: "Jardín Instituto Corazón de Jesús | Nivel Inicial Católico Balvanera",
   description:
-    "Nivel inicial en Balvanera con jornada completa para niños de 2 a 5 años. Metodología lúdica y creativa en un ambiente cálido y familiar.",
+    "Jardín Instituto Corazón de Jesús en Balvanera - Nivel inicial católico para niños de 2 a 5 años con jornada completa. Metodología lúdica en ambiente cálido y familiar en Buenos Aires.",
   keywords:
-    "nivel inicial Balvanera, jardín maternal Buenos Aires, educación inicial católica, jardín jornada completa",
+    "jardín Instituto Corazón de Jesús, nivel inicial Balvanera, jardín maternal Buenos Aires, educación inicial católica, jardín jornada completa Balvanera, jardín católico Buenos Aires",
+  openGraph: {
+    title:
+      "Jardín Instituto Corazón de Jesús | Nivel Inicial Católico Balvanera",
+    description:
+      "Nivel inicial católico para niños de 2 a 5 años con jornada completa. Metodología lúdica en ambiente cálido y familiar.",
+    url: "https://www.institutocorazondejesus.edu.ar/niveles/jardin",
+    images: [
+      {
+        url: "https://www.institutocorazondejesus.edu.ar/images/jardin2.webp",
+        width: 1200,
+        height: 630,
+        alt: "Jardín Instituto Corazón de Jesús - Niños jugando y aprendiendo",
+      },
+    ],
+  },
+  alternates: {
+    canonical: "https://www.institutocorazondejesus.edu.ar/niveles/jardin",
+  },
 };
 
 export default function JardinPage() {

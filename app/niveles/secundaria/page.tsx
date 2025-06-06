@@ -14,11 +14,30 @@ import {
 } from "lucide-react";
 
 export const metadata = {
-  title: "Nivel Secundario | Instituto Corazón de Jesús",
+  title:
+    "Secundaria Instituto Corazón de Jesús | Bachillerato Católico Balvanera",
   description:
-    "Bachillerato con orientación en Ciencias Sociales y Humanidades en Balvanera. Formación integral para estudios superiores y desarrollo personal.",
+    "Secundaria Instituto Corazón de Jesús en Balvanera - Bachillerato católico con orientación en Ciencias Sociales y Humanidades. Formación integral para estudios superiores en Buenos Aires.",
   keywords:
-    "secundaria Balvanera, bachillerato ciencias sociales, instituto secundario católico, orientación humanidades Buenos Aires",
+    "secundaria Instituto Corazón de Jesús, secundaria Balvanera, bachillerato ciencias sociales, instituto secundario católico, orientación humanidades Buenos Aires, bachillerato católico Buenos Aires",
+  openGraph: {
+    title:
+      "Secundaria Instituto Corazón de Jesús | Bachillerato Católico Balvanera",
+    description:
+      "Bachillerato católico con orientación en Ciencias Sociales y Humanidades. Formación integral para estudios superiores.",
+    url: "https://www.institutocorazondejesus.edu.ar/niveles/secundaria",
+    images: [
+      {
+        url: "https://www.institutocorazondejesus.edu.ar/images/secundaria.webp",
+        width: 1200,
+        height: 630,
+        alt: "Secundaria Instituto Corazón de Jesús - Estudiantes en el instituto",
+      },
+    ],
+  },
+  alternates: {
+    canonical: "https://www.institutocorazondejesus.edu.ar/niveles/secundaria",
+  },
 };
 
 export default function SecundariaPage() {

@@ -5,7 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { BookOpen, Globe, Heart, Music, Brain, Lightbulb } from "lucide-react";
 
 export const metadata = {
-  title: "Propuesta Educativa Complementaria | Colegio Corazón de Jesús",
+  title: "Propuesta Educativa Complementaria | Instituto Corazón de Jesús",
   description:
     "Conoce nuestra propuesta educativa complementaria: formación religiosa, talleres, inglés y gabinete psicopedagógico.",
   keywords:
@@ -181,7 +181,7 @@ export default function PropuestaComplementariaPage() {
               <p className="text-gray-700 mb-4">
                 En el mundo globalizado actual, el dominio del idioma inglés es
                 una herramienta fundamental para el desarrollo académico y
-                profesional. Por ello, nuestro colegio ofrece una enseñanza
+                profesional. Por ello, nuestro Instituto ofrece una enseñanza
                 intensiva y de calidad del idioma inglés desde el nivel inicial
                 hasta el secundario.
               </p>
@@ -269,7 +269,7 @@ export default function PropuestaComplementariaPage() {
                 </h2>
               </div>
               <p className="text-gray-700 mb-4">
-                El Gabinete Psicopedagógico del Colegio Corazón de Jesús está
+                El Gabinete Psicopedagógico del Instituto Corazón de Jesús está
                 conformado por un equipo de profesionales especializados que
                 trabajan de manera interdisciplinaria para acompañar el proceso
                 de enseñanza y aprendizaje de nuestros alumnos, atendiendo a sus

@@ -1,6 +1,6 @@
-import Link from "next/link"
-import Image from "next/image"
-import { Facebook, Instagram, Mail, Phone, MapPin } from "lucide-react"
+import Link from "next/link";
+import Image from "next/image";
+import { Facebook, Instagram, Mail, Phone, MapPin } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -11,30 +11,44 @@ export default function Footer() {
             <div className="flex items-center mb-4">
               <Image
                 src="/images/logo.png"
-                alt="Logo Colegio Corazón de Jesús"
+                alt="Logo Instituto Corazón de Jesús"
                 width={60}
                 height={60}
                 className="h-12 w-auto mr-3 bg-white rounded-full p-1"
               />
               <div>
-                <h3 className="text-lg font-bold">Colegio Corazón de Jesús</h3>
-                <p className="text-xs">Hermanas Carmelitas de la Caridad Vedruna</p>
+                <h3 className="text-lg font-bold">
+                  Instituto Corazón de Jesús
+                </h3>
+                <p className="text-xs">
+                  Hermanas Carmelitas de la Caridad Vedruna
+                </p>
               </div>
             </div>
             <p className="text-sm mb-4">
-              Educación integral basada en valores cristianos desde 1925. Formamos personas íntegras, comprometidas con
-              su tiempo y capaces de transformar su entorno.
+              Educación integral basada en valores cristianos desde 1925.
+              Formamos personas íntegras, comprometidas con su tiempo y capaces
+              de transformar su entorno.
             </p>
             <div className="flex space-x-4">
-              <Link href="https://facebook.com" className="hover:text-white/80 transition-colors">
+              <Link
+                href="https://facebook.com"
+                className="hover:text-white/80 transition-colors"
+              >
                 <Facebook size={20} />
                 <span className="sr-only">Facebook</span>
               </Link>
-              <Link href="https://instagram.com" className="hover:text-white/80 transition-colors">
+              <Link
+                href="https://instagram.com"
+                className="hover:text-white/80 transition-colors"
+              >
                 <Instagram size={20} />
                 <span className="sr-only">Instagram</span>
               </Link>
-              <Link href="mailto:info@colegiocorazondejesus.edu.ar" className="hover:text-white/80 transition-colors">
+              <Link
+                href="mailto:info@colegiocorazondejesus.edu.ar"
+                className="hover:text-white/80 transition-colors"
+              >
                 <Mail size={20} />
                 <span className="sr-only">Email</span>
               </Link>
@@ -42,40 +56,63 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-lg font-bold mb-4 border-b border-white/20 pb-2">Enlaces rápidos</h3>
+            <h3 className="text-lg font-bold mb-4 border-b border-white/20 pb-2">
+              Enlaces rápidos
+            </h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/institucional" className="text-sm hover:text-white/80 transition-colors">
+                <Link
+                  href="/institucional"
+                  className="text-sm hover:text-white/80 transition-colors"
+                >
                   Nuestra Historia
                 </Link>
               </li>
               <li>
-                <Link href="/niveles/jardin" className="text-sm hover:text-white/80 transition-colors">
+                <Link
+                  href="/niveles/jardin"
+                  className="text-sm hover:text-white/80 transition-colors"
+                >
                   Jardín de Infantes
                 </Link>
               </li>
               <li>
-                <Link href="/niveles/primaria" className="text-sm hover:text-white/80 transition-colors">
+                <Link
+                  href="/niveles/primaria"
+                  className="text-sm hover:text-white/80 transition-colors"
+                >
                   Nivel Primario
                 </Link>
               </li>
               <li>
-                <Link href="/niveles/secundaria" className="text-sm hover:text-white/80 transition-colors">
+                <Link
+                  href="/niveles/secundaria"
+                  className="text-sm hover:text-white/80 transition-colors"
+                >
                   Nivel Secundario
                 </Link>
               </li>
               <li>
-                <Link href="/propuesta-complementaria" className="text-sm hover:text-white/80 transition-colors">
+                <Link
+                  href="/propuesta-complementaria"
+                  className="text-sm hover:text-white/80 transition-colors"
+                >
                   Propuesta Complementaria
                 </Link>
               </li>
               <li>
-                <Link href="/noticias" className="text-sm hover:text-white/80 transition-colors">
+                <Link
+                  href="/noticias"
+                  className="text-sm hover:text-white/80 transition-colors"
+                >
                   Noticias
                 </Link>
               </li>
               <li>
-                <Link href="/contacto" className="text-sm hover:text-white/80 transition-colors">
+                <Link
+                  href="/contacto"
+                  className="text-sm hover:text-white/80 transition-colors"
+                >
                   Contacto
                 </Link>
               </li>
@@ -83,7 +120,9 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-lg font-bold mb-4 border-b border-white/20 pb-2">Contacto</h3>
+            <h3 className="text-lg font-bold mb-4 border-b border-white/20 pb-2">
+              Contacto
+            </h3>
             <address className="not-italic">
               <div className="flex items-start mb-2">
                 <MapPin size={18} className="mr-2 mt-1 flex-shrink-0" />
@@ -115,9 +154,12 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-white/20 mt-8 pt-8 text-center text-sm">
-          <p>&copy; {new Date().getFullYear()} Colegio Corazón de Jesús - Todos los derechos reservados</p>
+          <p>
+            &copy; {new Date().getFullYear()} Instituto Corazón de Jesús - Todos
+            los derechos reservados
+          </p>
         </div>
       </div>
     </footer>
-  )
+  );
 }

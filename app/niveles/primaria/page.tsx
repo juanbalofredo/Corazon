@@ -13,11 +13,30 @@ import {
 } from "lucide-react";
 
 export const metadata = {
-  title: "Nivel Primario | Instituto Corazón de Jesús",
+  title:
+    "Primaria Instituto Corazón de Jesús | Educación Primaria Católica Balvanera",
   description:
-    "Educación primaria de jornada completa en Balvanera con formación académica sólida y valores cristianos. De 1° a 7° grado.",
+    "Primaria Instituto Corazón de Jesús en Balvanera - Educación primaria católica de jornada completa de 1° a 7° grado. Formación académica sólida con valores cristianos en Buenos Aires.",
   keywords:
-    "primaria católica Buenos Aires, escuela primaria Balvanera, educación primaria valores cristianos, primaria jornada completa",
+    "primaria Instituto Corazón de Jesús, primaria católica Buenos Aires, escuela primaria Balvanera, educación primaria valores cristianos, primaria jornada completa Balvanera, colegio primario católico Buenos Aires",
+  openGraph: {
+    title:
+      "Primaria Instituto Corazón de Jesús | Educación Primaria Católica Balvanera",
+    description:
+      "Educación primaria católica de jornada completa de 1° a 7° grado en Balvanera. Formación académica sólida con valores cristianos.",
+    url: "https://www.institutocorazondejesus.edu.ar/niveles/primaria",
+    images: [
+      {
+        url: "https://www.institutocorazondejesus.edu.ar/images/primaria.webp",
+        width: 1200,
+        height: 630,
+        alt: "Primaria Instituto Corazón de Jesús - Aulas y estudiantes",
+      },
+    ],
+  },
+  alternates: {
+    canonical: "https://www.institutocorazondejesus.edu.ar/niveles/primaria",
+  },
 };
 
 export default function PrimariaPage() {

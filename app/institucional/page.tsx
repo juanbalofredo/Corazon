@@ -5,11 +5,11 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Quote } from "lucide-react";
 
 export const metadata = {
-  title: "Institucional | Colegio Corazón de Jesús",
+  title: "Institucional | Instituto Corazón de Jesús",
   description:
-    "Conoce la historia, misión, visión y valores del Colegio Corazón de Jesús. Más de 100 años de trayectoria educativa en Balvanera, Buenos Aires.",
+    "Conoce la historia, misión, visión y valores del Instituto Corazón de Jesús. Más de 100 años de trayectoria educativa en Balvanera, Buenos Aires.",
   keywords:
-    "colegio católico Balvanera, historia Colegio Corazón de Jesús, Hermanas Carmelitas Vedruna, educación católica Buenos Aires",
+    "Instituto católico Balvanera, historia Instituto Corazón de Jesús, Hermanas Carmelitas Vedruna, educación católica Buenos Aires",
 };
 
 export default function InstitucionalPage() {
@@ -28,7 +28,7 @@ export default function InstitucionalPage() {
         <div className="relative rounded-lg overflow-hidden mb-12 h-80">
           <Image
             src="/images/historia.webp"
-            alt="Fachada del Colegio Corazón de Jesús"
+            alt="Fachada del Instituto Corazón de Jesús"
             fill
             className="object-cover"
           />
@@ -46,7 +46,7 @@ export default function InstitucionalPage() {
           </h2>
           <div className="prose max-w-none text-gray-700">
             <p>
-              El Colegio Corazón de Jesús, situado en el corazón del barrio
+              El Instituto Corazón de Jesús, situado en el corazón del barrio
               porteño de Balvanera, es mucho más que una institución educativa:
               es un símbolo de compromiso, fe y transformación comunitaria. Su
               historia se entrelaza con la de una ciudad que, a comienzos del
@@ -70,7 +70,7 @@ export default function InstitucionalPage() {
             <p>
               Ese año marcó un crecimiento importante gracias al impulso de la
               Srta. María Avalle, quien construyó un nuevo edificio en Ayacucho
-              474 (actual dirección del colegio), inaugurado en 1914. A partir
+              474 (actual dirección del Instituto), inaugurado en 1914. A partir
               de entonces, la dirección general estuvo a cargo de la Srta.
               Nieves Jordán, con la Srta. María Badaraco al frente del nivel
               primario hasta 1925. Durante estos años, la escuela no solo se
@@ -106,7 +106,7 @@ export default function InstitucionalPage() {
               la capilla propia (en 1926), y se sostuvo una intensa colaboración
               con las asociaciones del barrio, destacándose el Centro San
               Ignacio, los PP. Jesuitas, las Damas Vicentinas y familias
-              comprometidas con la misión del colegio.
+              comprometidas con la misión del Instituto.
             </p>
             <p>
               A lo largo de las décadas siguientes, la escuela atravesó momentos
@@ -199,9 +199,9 @@ export default function InstitucionalPage() {
 
           <div className="prose max-w-none text-gray-700">
             <p>
-              A lo largo de estos 100 años, el Colegio Corazón de Jesús ha sido
-              mucho más que un espacio escolar: ha sido un verdadero hogar de
-              contención, formación y esperanza, acompañando con cercanía a
+              A lo largo de estos 100 años, el Instituto Corazón de Jesús ha
+              sido mucho más que un espacio escolar: ha sido un verdadero hogar
+              de contención, formación y esperanza, acompañando con cercanía a
               generaciones de niños, jóvenes y familias. Su propuesta educativa
               integral, con un fuerte contenido espiritual, académico y
               solidario, lo ha convertido en un referente ineludible en el
@@ -224,7 +224,7 @@ export default function InstitucionalPage() {
             <div className="relative h-48 rounded-lg overflow-hidden">
               <Image
                 src="/images/vieja1.webp"
-                alt="Imagen histórica del colegio"
+                alt="Imagen histórica del Instituto"
                 fill
                 className="object-cover"
               />
@@ -232,7 +232,7 @@ export default function InstitucionalPage() {
             <div className="relative h-48 rounded-lg overflow-hidden">
               <Image
                 src="/images/vieja2.webp"
-                alt="Imagen histórica del colegio"
+                alt="Imagen histórica del Instituto"
                 fill
                 className="object-cover"
               />
@@ -240,7 +240,7 @@ export default function InstitucionalPage() {
             <div className="relative h-48 rounded-lg overflow-hidden">
               <Image
                 src="/images/vieja3.webp"
-                alt="Imagen histórica del colegio"
+                alt="Imagen histórica del Instituto"
                 fill
                 className="object-cover"
               />
@@ -255,7 +255,7 @@ export default function InstitucionalPage() {
             </h2>
             <div className="prose max-w-none text-gray-700">
               <p>
-                El Colegio pertenece a la congregación de HH. Carmelitas de la
+                El Instituto pertenece a la congregación de HH. Carmelitas de la
                 Caridad de Vedruna, fundada por Santa Joaquina, cuyo carisma se
                 orienta a la educación integral de los alumnos desde una visión
                 cristiana del hombre y del mundo.
