@@ -33,6 +33,7 @@ if (typeof window === "undefined") {
       sheets = google.sheets({ version: "v4", auth });
     }
   } catch (error) {
+    console.error(error);
     // Error silencioso para evitar romper la app si no hay credenciales configuradas
   }
 }
@@ -121,6 +122,7 @@ export async function getSheetData(sheetName: string) {
 
     return [];
   } catch (error) {
+    console.error(error);
     return [];
   }
 }
@@ -130,13 +132,7 @@ const noticiasEstaticas: any[] = [];
 
 const anunciosEstaticos: any[] = [];
 
-const popupEstatico: any = null;
-
 export async function getPopupData() {
-  if (process.env.NODE_ENV === "production") {
-    return popupEstatico;
-  }
-
   if (!sheets) {
     return null;
   }
@@ -192,11 +188,6 @@ export async function getNoticias() {
 }
 
 export async function getAnuncios() {
-  // En producción con hosting estático, retornamos datos estáticos
-  if (process.env.NODE_ENV === "production") {
-    return anunciosEstaticos;
-  }
-
   // Código original para desarrollo
   try {
     const data = await getSheetData("anuncios");
@@ -208,6 +199,7 @@ export async function getAnuncios() {
       fecha: row[3] || new Date().toISOString().split("T")[0],
     }));
   } catch (error) {
+    console.error(error);
     return anunciosEstaticos;
   }
 }
