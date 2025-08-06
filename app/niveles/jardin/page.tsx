@@ -5,14 +5,15 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Heart, Users, BookOpen, Gamepad2 } from "lucide-react";
 
 export const metadata = {
-  title: "Jardín Instituto Corazón de Jesús | Nivel Inicial Católico Balvanera",
+  title:
+    "Nivel Inicial Instituto Corazón de Jesús | Nivel Inicial Católico Balvanera",
   description:
-    "Jardín Instituto Corazón de Jesús en Balvanera - Nivel inicial católico para niños de 2 a 5 años con jornada completa. Metodología lúdica en ambiente cálido y familiar en Buenos Aires.",
+    "Nivel Inicial Instituto Corazón de Jesús en Balvanera - Nivel inicial católico para niños de 2 a 5 años con jornada completa. Metodología lúdica en ambiente cálido y familiar en Buenos Aires.",
   keywords:
-    "jardín Instituto Corazón de Jesús, nivel inicial Balvanera, jardín maternal Buenos Aires, educación inicial católica, jardín jornada completa Balvanera, jardín católico Buenos Aires",
+    "nivel inicial Instituto Corazón de Jesús, nivel inicial Balvanera, nivel inicial maternal Buenos Aires, educación inicial católica, nivel inicial jornada completa Balvanera, nivel inicial católico Buenos Aires",
   openGraph: {
     title:
-      "Jardín Instituto Corazón de Jesús | Nivel Inicial Católico Balvanera",
+      "Nivel Inicial Instituto Corazón de Jesús | Nivel Inicial Católico Balvanera",
     description:
       "Nivel inicial católico para niños de 2 a 5 años con jornada completa. Metodología lúdica en ambiente cálido y familiar.",
     url: "https://www.institutocorazondejesus.edu.ar/niveles/jardin",
@@ -21,7 +22,7 @@ export const metadata = {
         url: "https://www.institutocorazondejesus.edu.ar/images/jardin2.webp",
         width: 1200,
         height: 630,
-        alt: "Jardín Instituto Corazón de Jesús - Niños jugando y aprendiendo",
+        alt: "Nivel Inicial Instituto Corazón de Jesús - Niños jugando y aprendiendo",
       },
     ],
   },
@@ -32,13 +33,10 @@ export const metadata = {
 
 export default function JardinPage() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-green-50">
       <div className="container mx-auto px-4 py-12">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full mb-6">
-              <Heart className="h-10 w-10 text-white" />
-            </div>
             <h1 className="text-4xl font-bold bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent mb-4">
               Nivel Inicial
             </h1>
@@ -78,24 +76,17 @@ export default function JardinPage() {
             </h2>
 
             <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-8 shadow-xl mb-8">
-              <p className="text-gray-700 text-lg leading-relaxed mb-6">
+              <p className="text-gray-700 text-lg leading-relaxed mb-6 text-justify">
                 Somos una comunidad educativa con carisma Vedruna, inspirada en
-                los valores de Santa Joaquina de Vedruna. Promovemos una
-                educación que transforma, integra y humaniza.
+                los valores de Santa Joaquina de Vedruna. Acompañamos a los más
+                pequeños en sus primeros pasos escolares en un clima seguro y
+                cálido, donde cada niño es protagonista activo de su
+                aprendizaje.
               </p>
-              <p className="text-gray-700 text-lg leading-relaxed mb-6">
-                Acompañamos a los más pequeños en los primeros pasos de su
-                trayecto escolar en un clima seguro y cálido. Creemos que este
-                inicio es una etapa fundamental, no solo para ellos, sino
-                también para sus familias, a quienes también acompañamos con
-                compromiso y cercanía.
-              </p>
-              <p className="text-gray-700 text-lg leading-relaxed">
-                Revalorizamos los saberes previos de cada uno de los niños
-                porque cada uno de ellos es el protagonista activo en la
-                construcción de sus conocimientos, explorando, observando,
-                creando y afrontando nuevos desafíos para adquirir nuevos
-                aprendizajes.
+              <p className="text-gray-700 text-lg leading-relaxed text-justify">
+                Promovemos una educación integral que transforma, integra y
+                humaniza, revalorizando los saberes previos de cada niño a
+                través del juego, la exploración y la creatividad.
               </p>
             </div>
 
@@ -110,12 +101,11 @@ export default function JardinPage() {
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-gray-700">
-                    El juego es una parte fundamental de nuestra propuesta
-                    pedagógica, como forma de aproximarse al mundo para poner a
-                    prueba emociones, ideas, para compartir con el otro y
-                    socializar. Integramos el juego como medio natural de
-                    aprendizaje y como un derecho esencial en la infancia.
+                  <p className="text-gray-700 text-justify">
+                    El juego es fundamental en nuestra propuesta pedagógica,
+                    como forma natural de aproximarse al mundo, compartir con
+                    otros y socializar. Lo integramos como medio de aprendizaje
+                    y derecho esencial en la infancia.
                   </p>
                 </CardContent>
               </Card>
@@ -130,13 +120,11 @@ export default function JardinPage() {
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-gray-700">
-                    "Crecer con otros" es el eje del trabajo con los niños y
-                    niñas donde la formación en valores atraviesa toda la
-                    propuesta, destacando valores como la amistad, la
-                    solidaridad y el trabajo en equipo. Acompañamos en el
-                    proceso de socialización construyendo los primeros vínculos
-                    por fuera de la familia.
+                  <p className="text-gray-700 text-justify">
+                    "Crecer con otros" es nuestro eje de trabajo, donde la
+                    formación en valores como la amistad, solidaridad y trabajo
+                    en equipo atraviesa toda la propuesta educativa,
+                    construyendo los primeros vínculos sociales.
                   </p>
                 </CardContent>
               </Card>
@@ -202,7 +190,7 @@ export default function JardinPage() {
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-gray-600 text-sm">
+                    <p className="text-gray-600 text-justify">
                       {objetivo.description}
                     </p>
                   </CardContent>
@@ -211,121 +199,107 @@ export default function JardinPage() {
             </div>
           </div>
 
-          {/* Propuesta Didáctica */}
+          {/* Equipo Directivo */}
           <div className="mb-16">
             <h2 className="text-3xl font-bold text-center mb-8 bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent">
-              Propuesta Didáctica
+              Equipo Directivo
             </h2>
 
-            <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-8 shadow-xl mb-8">
-              <div className="text-center mb-8">
-                <h3 className="text-xl font-bold text-gray-800 mb-4">
-                  Secuencias y proyectos significativos
-                </h3>
-                <p className="text-gray-700">
-                  Aprendizajes integrados a través de situaciones lúdicas y
-                  cotidianas
-                </p>
-              </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto">
+              <Card className="bg-gradient-to-br from-green-100 to-emerald-100 border-none shadow-lg">
+                <CardHeader className="text-center">
+                  <CardTitle className="text-green-700">Directora</CardTitle>
+                </CardHeader>
+                <CardContent className="text-center">
+                  <p className="text-gray-700 font-medium">
+                    Hna. María Inés Barbé
+                  </p>
+                </CardContent>
+              </Card>
 
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-                {[
-                  {
-                    name: "Matemática",
-                    icon: "🔢",
-                    color: "from-blue-400 to-blue-600",
-                  },
-                  {
-                    name: "Indagación del Ambiente",
-                    icon: "🌱",
-                    color: "from-green-400 to-green-600",
-                  },
-                  {
-                    name: "Catequesis",
-                    icon: "✝️",
-                    color: "from-purple-400 to-purple-600",
-                  },
-                  {
-                    name: "Música",
-                    icon: "🎵",
-                    color: "from-pink-400 to-pink-600",
-                  },
-                  {
-                    name: "Educación Física",
-                    icon: "⚽",
-                    color: "from-orange-400 to-orange-600",
-                  },
-                  {
-                    name: "Inglés",
-                    icon: "🌍",
-                    color: "from-cyan-400 to-cyan-600",
-                  },
-                  {
-                    name: "Arte",
-                    icon: "🎨",
-                    color: "from-red-400 to-red-600",
-                  },
-                  {
-                    name: "Juego",
-                    icon: "🎲",
-                    color: "from-yellow-400 to-yellow-600",
-                  },
-                  {
-                    name: "Lengua",
-                    icon: "📚",
-                    color: "from-indigo-400 to-indigo-600",
-                  },
-                ].map((materia, index) => (
-                  <div
-                    key={index}
-                    className={`bg-gradient-to-r ${materia.color} rounded-xl p-4 text-center text-white shadow-lg`}
-                  >
-                    <div className="text-2xl mb-2">{materia.icon}</div>
-                    <div className="text-sm font-medium">{materia.name}</div>
-                  </div>
-                ))}
-              </div>
+              <Card className="bg-gradient-to-br from-emerald-100 to-green-100 border-none shadow-lg">
+                <CardHeader className="text-center">
+                  <CardTitle className="text-emerald-700">Secretaria</CardTitle>
+                </CardHeader>
+                <CardContent className="text-center">
+                  <p className="text-gray-700 font-medium">Claudia Montanari</p>
+                </CardContent>
+              </Card>
             </div>
           </div>
 
-          {/* Equipo Docente */}
+          {/* Servicios */}
           <div className="mb-16">
-            <Card className="shadow-xl">
-              <CardContent className="p-8">
-                <h2 className="text-2xl font-bold text-center mb-6 text-green-700">
-                  Nuestro Equipo Docente
-                </h2>
-                <p className="text-gray-700 text-lg leading-relaxed text-center">
-                  El equipo docente asume con{" "}
-                  <strong>RESPONSABILIDAD Y COMPROMISO</strong> cada paso de los
-                  niños, creando un espacio de cuidado, juego y aprendizaje que
-                  nutre su bienestar y crecimiento, considerando al niño como
-                  activo protagonista en la construcción de sus conocimientos.
-                </p>
-              </CardContent>
-            </Card>
+            <h2 className="text-3xl font-bold text-center mb-8 bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent">
+              Servicios
+            </h2>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {[
+                {
+                  title: "Comedor",
+                  description:
+                    "Almuerzo y merienda elaborados en nuestra cocina con menús balanceados",
+                  icon: "🍽️",
+                },
+                {
+                  title: "Gabinete Psicopedagógico",
+                  description:
+                    "Acompañamiento profesional en el proceso de aprendizaje",
+                  icon: "🧠",
+                },
+                {
+                  title: "Inglés",
+                  description:
+                    "Iniciación al idioma inglés de manera lúdica y natural",
+                  icon: "🗣️",
+                },
+                {
+                  title: "Catequesis",
+                  description:
+                    "Formación en valores cristianos adaptada a cada edad",
+                  icon: "✝️",
+                },
+              ].map((servicio, index) => (
+                <Card
+                  key={index}
+                  className="text-center bg-white/70 backdrop-blur-sm border-none shadow-lg hover:shadow-xl transition-shadow"
+                >
+                  <CardHeader>
+                    <div className="text-4xl mb-2">{servicio.icon}</div>
+                    <CardTitle className="text-lg text-gray-800">
+                      {servicio.title}
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-gray-600 text-sm text-justify">
+                      {servicio.description}
+                    </p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
           </div>
 
-          {/* Inscripciones */}
-          <Card className="mb-12 shadow-xl">
-            <CardContent className="p-8">
-              <h2 className="text-3xl font-bold text-center mb-6 bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent">
-                Inscripciones 2025
-              </h2>
-              <p className="text-gray-700 text-center mb-8 text-lg">
-                Te invitamos a formar parte de nuestra comunidad educativa
-                Vedruna
-              </p>
-              <div className="text-center">
-                <Button
-                  asChild
-                  className="bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white px-8 py-3 text-lg rounded-full shadow-lg"
-                >
-                  <Link href="/contacto">Solicitar información</Link>
-                </Button>
-              </div>
-            </CardContent>
-          </Card>
+          {/* Call to Action */}
+          <div className="text-center bg-gradient-to-r from-green-100 to-emerald-100 rounded-2xl p-8">
+            <h2 className="text-2xl font-bold text-green-700 mb-4">
+              ¿Quieres que tu hijo forme parte de nuestra familia?
+            </h2>
+            <p className="text-gray-700 mb-6 text-justify max-w-2xl mx-auto">
+              Te invitamos a conocer nuestra propuesta educativa y descubrir
+              cómo acompañamos a los más pequeños en sus primeros pasos
+              escolares.
+            </p>
+            <div className="flex flex-wrap justify-center gap-4">
+              <Button
+                asChild
+                className="bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700"
+              >
+                <Link href="/contacto">Contactanos</Link>
+              </Button>
+            </div>
+          </div>
         </div>
       </div>
     </div>

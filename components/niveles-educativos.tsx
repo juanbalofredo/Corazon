@@ -13,7 +13,7 @@ export default function NivelesEducativos() {
   const niveles = [
     {
       id: "jardin",
-      title: "Jardín de Infantes",
+      title: "Nivel Inicial",
       description:
         "Jornada completa para salas de 2, 3, 4 y 5 años. Metodología lúdica y creativa que fomenta el desarrollo integral.",
       image: "/images/jardin.webp",
@@ -93,18 +93,18 @@ export default function NivelesEducativos() {
           ))}
         </div>
 
-        <div className="mt-12 bg-gray-50 p-6 rounded-lg">
+        <div className="mt-12 bg-[#0a2d8f]/5 p-6 rounded-lg border-none">
           <h3 className="text-xl font-bold text-[#0a2d8f] mb-4">
             Propuesta Educativa Complementaria
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
-            <div className="bg-white p-4 rounded shadow">
+            <div className="bg-white p-4 rounded shadow border-none">
               <h4 className="font-bold text-[#0a2d8f]">Formación Religiosa</h4>
               <p className="text-sm text-gray-600">
                 Educación en la fe católica y valores cristianos.
               </p>
             </div>
-            <div className="bg-white p-4 rounded shadow">
+            <div className="bg-white p-4 rounded shadow border-none">
               <h4 className="font-bold text-[#0a2d8f]">
                 Talleres y Apoyo Escolar
               </h4>
@@ -112,13 +112,13 @@ export default function NivelesEducativos() {
                 Actividades extracurriculares y acompañamiento personalizado.
               </p>
             </div>
-            <div className="bg-white p-4 rounded shadow">
+            <div className="bg-white p-4 rounded shadow border-none">
               <h4 className="font-bold text-[#0a2d8f]">Inglés</h4>
               <p className="text-sm text-gray-600">
                 Enseñanza del idioma inglés en todos los niveles.
               </p>
             </div>
-            <div className="bg-white p-4 rounded shadow">
+            <div className="bg-white p-4 rounded shadow border-none">
               <h4 className="font-bold text-[#0a2d8f]">
                 Gabinete Psicopedagógico
               </h4>

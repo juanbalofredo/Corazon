@@ -14,23 +14,23 @@ import {
 
 export const metadata = {
   title:
-    "Primaria Instituto Corazón de Jesús | Educación Primaria Católica Balvanera",
+    "Nivel Primario Instituto Corazón de Jesús | Educación Nivel Primario Católica Balvanera",
   description:
-    "Primaria Instituto Corazón de Jesús en Balvanera - Educación primaria católica de jornada completa de 1° a 7° grado. Formación académica sólida con valores cristianos en Buenos Aires.",
+    "Nivel Primario Instituto Corazón de Jesús en Balvanera - Educación nivel primario católica de jornada completa de 1° a 7° grado. Formación académica sólida con valores cristianos en Buenos Aires.",
   keywords:
-    "primaria Instituto Corazón de Jesús, primaria católica Buenos Aires, escuela primaria Balvanera, educación primaria valores cristianos, primaria jornada completa Balvanera, colegio primario católico Buenos Aires",
+    "nivel primario Instituto Corazón de Jesús, nivel primario católica Buenos Aires, escuela nivel primario Balvanera, educación nivel primario valores cristianos, nivel primario jornada completa Balvanera, colegio nivel primario católico Buenos Aires",
   openGraph: {
     title:
-      "Primaria Instituto Corazón de Jesús | Educación Primaria Católica Balvanera",
+      "Nivel Primario Instituto Corazón de Jesús | Educación Nivel Primario Católica Balvanera",
     description:
-      "Educación primaria católica de jornada completa de 1° a 7° grado en Balvanera. Formación académica sólida con valores cristianos.",
+      "Educación nivel primario católica de jornada completa de 1° a 7° grado en Balvanera. Formación académica sólida con valores cristianos.",
     url: "https://www.institutocorazondejesus.edu.ar/niveles/primaria",
     images: [
       {
         url: "https://www.institutocorazondejesus.edu.ar/images/primaria.webp",
         width: 1200,
         height: 630,
-        alt: "Primaria Instituto Corazón de Jesús - Aulas y estudiantes",
+        alt: "Nivel Primario Instituto Corazón de Jesús - Aulas y estudiantes",
       },
     ],
   },
@@ -41,13 +41,10 @@ export const metadata = {
 
 export default function PrimariaPage() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-orange-50">
       <div className="container mx-auto px-4 py-12">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-orange-500 to-red-600 rounded-full mb-6">
-              <BookOpen className="h-10 w-10 text-white" />
-            </div>
             <h1 className="text-4xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent mb-4">
               Nivel Primario
             </h1>
@@ -64,7 +61,7 @@ export default function PrimariaPage() {
           <div className="relative rounded-2xl overflow-hidden mb-12 h-80 shadow-2xl">
             <Image
               src="/images/primaria.webp"
-              alt="Alumnos de primaria en el aula"
+              alt="Alumnos de nivel primario en el aula"
               fill
               className="object-cover"
             />
@@ -252,7 +249,7 @@ export default function PrimariaPage() {
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-gray-600 text-sm">
+                    <p className="text-gray-600 text-sm text-justify">
                       {proyecto.description}
                     </p>
                   </CardContent>
@@ -296,7 +293,9 @@ export default function PrimariaPage() {
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-white/90">{actividad.description}</p>
+                    <p className="text-white/90 text-justify">
+                      {actividad.description}
+                    </p>
                   </CardContent>
                 </Card>
               ))}
@@ -309,26 +308,20 @@ export default function PrimariaPage() {
               Servicios Adicionales
             </h2>
 
-            <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-8 shadow-xl">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <h3 className="font-bold text-orange-700 mb-3">
-                    Gabinete Psicopedagógico
-                  </h3>
-                  <p className="text-gray-700 mb-2">Lic. María Marta Marrari</p>
-                  <p className="text-gray-600 text-sm">Martes y jueves</p>
-                </div>
-                <div>
-                  <h3 className="font-bold text-red-700 mb-3">
-                    Comunicación con Familias
-                  </h3>
-                  <ul className="text-gray-700 text-sm space-y-1">
-                    <li>• Plataforma ACADEU</li>
-                    <li>• Cuaderno de comunicaciones</li>
-                    <li>• Comunicación telefónica</li>
-                  </ul>
-                </div>
-              </div>
+            <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-8 shadow-xl mb-8">
+              <p className="text-gray-700 text-lg leading-relaxed mb-6 text-justify">
+                En el Nivel Primario acompañamos a nuestros estudiantes en una
+                etapa fundamental de su formación académica y personal. Nuestra
+                propuesta educativa integra la excelencia académica con la
+                formación en valores cristianos, preparando a los alumnos para
+                los desafíos del futuro.
+              </p>
+              <p className="text-gray-700 text-lg leading-relaxed text-justify">
+                Trabajamos con metodologías innovadoras y un enfoque
+                personalizado que respeta los ritmos de aprendizaje de cada
+                estudiante, fomentando el pensamiento crítico, la creatividad y
+                el compromiso social.
+              </p>
             </div>
           </div>
 

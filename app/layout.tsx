@@ -23,7 +23,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: "Instituto Corazón de Jesús",
   description:
-    "Instituto Corazón de Jesús - Colegio católico en Balvanera con más de 100 años de trayectoria. Jardín, primaria y secundaria. Educación integral con valores cristianos y pedagogía Vedruna en Buenos Aires.",
+    "Instituto Corazón de Jesús - Colegio católico en Balvanera con más de 100 años de trayectoria. Nivel inicial, nivel primario y nivel secundario. Educación integral con valores cristianos y pedagogía Vedruna en Buenos Aires.",
   keywords: [
     "Instituto Corazón de Jesús",
     "Corazón de Jesús",
@@ -31,9 +31,9 @@ export const metadata: Metadata = {
     "instituto Balvanera",
     "colegio católico Buenos Aires",
     "escuela católica Balvanera",
-    "jardín Balvanera",
-    "primaria Balvanera",
-    "secundaria Balvanera",
+    "nivel inicial Balvanera",
+    "nivel primario Balvanera",
+    "nivel secundario Balvanera",
     "educación católica",
     "Hermanas Carmelitas Vedruna",
     "colegio religioso Buenos Aires",
@@ -72,7 +72,7 @@ export const metadata: Metadata = {
     siteName: "Instituto Corazón de Jesús",
     title: "Instituto Corazón de Jesús - Colegio Católico en Balvanera",
     description:
-      "Colegio católico en Balvanera con más de 100 años de trayectoria. Jardín, primaria y secundaria con educación integral y valores cristianos.",
+      "Colegio católico en Balvanera con más de 100 años de trayectoria. Nivel inicial, nivel primario y nivel secundario con educación integral y valores cristianos.",
     images: [
       {
         url: "https://www.institutocorazondejesus.edu.ar/images/header.webp",
@@ -150,7 +150,7 @@ export default function RootLayout({
               image:
                 "https://www.institutocorazondejesus.edu.ar/images/header.webp",
               description:
-                "Instituto Corazón de Jesús - Colegio católico en Balvanera con más de 100 años de trayectoria. Jardín, primaria y secundaria con educación integral y valores cristianos.",
+                "Instituto Corazón de Jesús - Colegio católico en Balvanera con más de 100 años de trayectoria. Nivel inicial, nivel primario y nivel secundario con educación integral y valores cristianos.",
               foundingDate: "1925",
               sameAs: [
                 "https://www.facebook.com/institutocorazondejesus",
@@ -182,7 +182,7 @@ export default function RootLayout({
                       "@type": "Course",
                       name: "Nivel Inicial",
                       description:
-                        "Jardín maternal y de infantes para niños de 2 a 5 años",
+                        "Nivel inicial maternal y de infantes para niños de 2 a 5 años",
                     },
                   },
                   {
@@ -191,7 +191,7 @@ export default function RootLayout({
                       "@type": "Course",
                       name: "Nivel Primario",
                       description:
-                        "Educación primaria de 1° a 7° grado con jornada completa",
+                        "Educación nivel primario de 1° a 7° grado con jornada completa",
                     },
                   },
                   {

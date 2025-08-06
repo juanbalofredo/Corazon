@@ -44,84 +44,26 @@ export default function InstitucionalPage() {
           <h2 className="text-2xl font-bold text-[#0a2d8f] mb-4">
             Reseña Histórica
           </h2>
-          <div className="prose max-w-none text-gray-700">
+          <div className="prose max-w-none text-gray-700 text-justify">
             <p>
-              El Instituto Corazón de Jesús, situado en el corazón del barrio
-              porteño de Balvanera, es mucho más que una institución educativa:
-              es un símbolo de compromiso, fe y transformación comunitaria. Su
-              historia se entrelaza con la de una ciudad que, a comienzos del
-              siglo XX, vivía un proceso de fuerte expansión demográfica,
-              producto de la inmigración europea y de los cambios sociales y
-              urbanos que redefinían Buenos Aires.
-            </p>
-
-            <h3 className="text-xl font-bold text-[#0a2d8f] mt-6 mb-2">
-              Pasos previos
-            </h3>
-            <p>
-              En ese contexto, el 20 de mayo de 1906, nació en la calle
-              Sarmiento 1881 una escuela completamente gratuita, fundada por el
-              P. Anselmo María Aguilar S.J., sacerdote jesuita, con el fin de
-              brindar formación a niñas pobres del populoso barrio de Balvanera.
-              Estuvo inicialmente dirigida por la Srta. Dolores Carbia y tuvo
-              como primera directora a la Srta. María Josefa Vederi, funcionando
-              con cuatro grados primarios hasta 1913.
+              El Instituto Corazón de Jesús fue fundado el 1º de mayo de 1925
+              por las Hermanas Carmelitas de la Caridad Vedruna en Ayacucho 474,
+              Balvanera. Nació como una escuela gratuita destinada a brindar
+              educación integral a niños del barrio, con el firme propósito de
+              formar personas íntegras basadas en valores cristianos.
             </p>
             <p>
-              Ese año marcó un crecimiento importante gracias al impulso de la
-              Srta. María Avalle, quien construyó un nuevo edificio en Ayacucho
-              474 (actual dirección del Instituto), inaugurado en 1914. A partir
-              de entonces, la dirección general estuvo a cargo de la Srta.
-              Nieves Jordán, con la Srta. María Badaraco al frente del nivel
-              primario hasta 1925. Durante estos años, la escuela no solo se
-              consolidó en lo pedagógico, sino también en lo social, con el
-              acompañamiento de mujeres comprometidas como Sara P. de Martínez,
-              quien enseñaba religión, y con un fuerte espíritu de servicio
-              impulsado siempre por su fundador, el P. Aguilar.
-            </p>
-            <p>
-              En 1924 se amplió el edificio con la construcción de un primer
-              piso, pensado para albergar a una comunidad religiosa.
-            </p>
-
-            <h3 className="text-xl font-bold text-[#0a2d8f] mt-6 mb-2">
-              Fundación
-            </h3>
-            <p>
-              Finalmente, el 1º de mayo de 1925 se celebró la inauguración
-              oficial de la casa y su entrega a las Hermanas Carmelitas de la
-              Caridad Vedruna, con la presencia de la Madre General Polonia
-              Lizárraga del Santísimo Sacramento y su secretaria, la Madre
-              Isabel Arias de San Ignacio, en visita desde la Casa Generalicia.
-              En ese momento, era provincial en Argentina la Madre María Teresa
-              Iturriague de la Santísima Trinidad.
-            </p>
-            <p>
-              El día 4 de mayo comenzaron las actividades escolares, con 83
-              alumnas en nivel primario (hasta 4º grado) y 35 en los cursos de
-              Corte y Confección. La comunidad religiosa estaba formada por
-              cinco hermanas, bajo la conducción de la Madre Claudia Vacas del
-              Sagrado Corazón, y rápidamente se fortalecieron las actividades
-              pastorales, sociales y recreativas. Se sumaron grados, se bendijo
-              la capilla propia (en 1926), y se sostuvo una intensa colaboración
-              con las asociaciones del barrio, destacándose el Centro San
-              Ignacio, los PP. Jesuitas, las Damas Vicentinas y familias
-              comprometidas con la misión del Instituto.
-            </p>
-            <p>
-              A lo largo de las décadas siguientes, la escuela atravesó momentos
-              de gran crecimiento, desafíos económicos y transformaciones
-              sociales. Se incorporaron nuevas áreas como manualidades, música y
-              comercial; se abrió el jardín de infantes en 1949; se gestionó el
-              aporte estatal en 1959; y se vivió un fecundo apostolado barrial
-              que dejó huellas profundas en generaciones de familias.
+              Durante estos casi 100 años, el Instituto se ha consolidado como
+              un referente educativo en el corazón de Buenos Aires, adaptándose
+              a los tiempos pero manteniendo siempre su esencia: educar con amor
+              y servir con el corazón.
             </p>
           </div>
         </div>
 
         <div className="mb-12">
           <h2 className="text-2xl font-bold text-[#0a2d8f] mb-6">
-            ¿Quiénes son las Hermanas Carmelitas de la Caridad Vedruna?
+            Las Hermanas Carmelitas de la Caridad Vedruna
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
@@ -148,78 +90,22 @@ export default function InstitucionalPage() {
               </div>
             </div>
 
-            <div className="prose max-w-none text-gray-700">
+            <div className="prose max-w-none text-gray-700 text-justify">
               <p>
-                La Congregación de las Hermanas Carmelitas de la Caridad Vedruna
-                fue fundada en 1826 en Vic, Cataluña (España), por Santa
-                Joaquina de Vedruna, una mujer de profunda espiritualidad y
-                acción transformadora. Su visión fue clara y revolucionaria para
-                su tiempo: consagrar una comunidad de mujeres al servicio de los
-                más necesitados, especialmente a través de la educación, la
-                salud y la promoción social.
+                La Congregación fue fundada en 1826 en Vic, España, por Santa
+                Joaquina de Vedruna, con la misión de servir a los más
+                necesitados a través de la educación y la promoción social.
               </p>
               <p>
-                Desde su origen, las Hermanas desarrollaron una pedagogía
-                centrada en la cercanía, el amor evangélico, la sencillez y el
-                compromiso con la justicia, valores que hoy siguen guiando su
-                misión en los cinco continentes.
-              </p>
-              <p>
-                En Argentina, las Hermanas llegaron a comienzos del siglo XX,
-                desplegando una intensa labor educativa y pastoral en distintos
-                contextos sociales. Además del Instituto Corazón de Jesús y la
-                residencia universitaria en Balvanera, fundaron otras tres
-                instituciones educativas que han dejado huella en sus
-                respectivas comunidades:
-              </p>
-              <ul>
-                <li>
-                  Colegio Nuestra Señora del Sagrado Corazón (Belgrano,
-                  C.A.B.A.)
-                </li>
-                <li>
-                  Colegio Nuestra Señora del Carmen (Suipacha, Buenos Aires)
-                </li>
-                <li>Colegio Niño Jesús de Praga (Carcarañá, Santa Fe)</li>
-              </ul>
-              <p>
-                En cada una de estas obras, se expresa el deseo de Santa
-                Joaquina: "hacer todo por amor, nada por la fuerza", encarnando
-                el carisma Vedruna en respuestas concretas a los desafíos del
-                tiempo y lugar.
+                En Argentina, las Hermanas fundaron varias instituciones
+                educativas, siendo el Instituto Corazón de Jesús una de sus
+                obras más queridas en Buenos Aires.
               </p>
             </div>
           </div>
         </div>
 
         <div className="mb-12">
-          <h2 className="text-2xl font-bold text-[#0a2d8f] mb-6">
-            Presente y Legado
-          </h2>
-
-          <div className="prose max-w-none text-gray-700">
-            <p>
-              A lo largo de estos 100 años, el Instituto Corazón de Jesús ha
-              sido mucho más que un espacio escolar: ha sido un verdadero hogar
-              de contención, formación y esperanza, acompañando con cercanía a
-              generaciones de niños, jóvenes y familias. Su propuesta educativa
-              integral, con un fuerte contenido espiritual, académico y
-              solidario, lo ha convertido en un referente ineludible en el
-              corazón de un barrio vibrante y diverso, donde confluyen
-              historias, culturas y trayectorias de vida muy distintas.
-            </p>
-            <p>
-              Estar inserto en este entorno tan plural ha sido, desde siempre,
-              una riqueza para la comunidad educativa, que ha sabido responder
-              con sensibilidad y compromiso a las distintas realidades,
-              generando un espacio accesible, acogedor y profundamente humano.
-              Así, el colegio se ha mantenido fiel al espíritu de sus
-              fundadoras, formando personas íntegras, comprometidas con su
-              tiempo, capaces de transformar su entorno desde el amor, la fe y
-              la esperanza.
-            </p>
-          </div>
-
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
             <div className="relative h-48 rounded-lg overflow-hidden">
               <Image
@@ -253,77 +139,18 @@ export default function InstitucionalPage() {
             <h2 className="text-2xl font-bold text-[#0a2d8f] mb-4">
               Nuestra Identidad
             </h2>
-            <div className="prose max-w-none text-gray-700">
+            <div className="prose max-w-none text-gray-700 text-justify">
               <p>
-                El Instituto pertenece a la congregación de HH. Carmelitas de la
-                Caridad de Vedruna, fundada por Santa Joaquina, cuyo carisma se
-                orienta a la educación integral de los alumnos desde una visión
-                cristiana del hombre y del mundo.
+                Somos una institución católica comprometida con la educación
+                integral, inspirada en el carisma de Santa Joaquina de Vedruna.
+                Nuestra comunidad educativa se caracteriza por:
               </p>
               <ul>
-                <li>
-                  <strong>Espacio de la Iglesia católica</strong> abierto a
-                  todos los que desean recibir esta educación, preferentemente a
-                  los más vulnerables, e identificada con sus intereses.
-                </li>
-                <li>
-                  <strong>Comunidad Educativa</strong> que se estructura con la
-                  participación de todos y asume este Proyecto Educativo en un
-                  clima de libertad y amor, que favorece la integración.
-                </li>
-                <li>
-                  <strong>Ámbito</strong> que se compromete con la realidad
-                  socio-cultural argentina y a la cual nuestra comunidad trata
-                  de dar respuesta.
-                </li>
-              </ul>
-
-              <h3 className="text-xl font-bold text-[#0a2d8f] mt-6 mb-2">
-                Nuestro Estilo Educativo
-              </h3>
-              <p>
-                La Comunidad Educativa que proyectamos se inspira en la
-                intuición pedagógica de Joaquina de Vedruna y en la trayectoria
-                educativa de las Carmelitas de la Caridad. El amor considerado
-                como punto de partida para una educación integral y como único
-                medio que la hace posible:
-              </p>
-              <ul>
-                <li>
-                  La relación familiar, sencilla y cercana entre todos los
-                  miembros de la comunidad educativa.
-                </li>
-                <li>
-                  La alegría como factor esencial en la educación y medio
-                  indispensable para favorecer el desarrollo del alumno.
-                </li>
-                <li>
-                  La constancia, tenacidad, amor al trabajo bien hecho, base de
-                  una tarea educativa responsable.
-                </li>
-                <li>
-                  Una educación motivadora que despierta y hace crecer las
-                  posibilidades de los niños y jóvenes, y ayuda a descubrir las
-                  propias cualidades y ponerlas al servicio de la sociedad.
-                </li>
-                <li>
-                  Una educación que parte de lo positivo que hay en cada uno
-                  como medio para superar limitaciones.
-                </li>
-                <li>
-                  Una educación personalizadora que integra armónicamente todas
-                  las dimensiones humanas.
-                </li>
-                <li>Una pedagogía activa, realista y práctica.</li>
-                <li>
-                  Una pedagogía que armonice la exigencia y seriedad en los
-                  planeamientos, con la flexibilidad y creatividad en la forma y
-                  en los medios.
-                </li>
-                <li>
-                  El compromiso con los intereses de los pobres y la promoción
-                  de la justicia y la solidaridad.
-                </li>
+                <li>Un ambiente familiar, cercano y acogedor</li>
+                <li>La formación en valores cristianos y humanos</li>
+                <li>El compromiso con la excelencia académica</li>
+                <li>La atención personalizada a cada estudiante</li>
+                <li>El servicio preferencial a las familias más vulnerables</li>
               </ul>
             </div>
           </CardContent>

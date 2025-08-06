@@ -20,13 +20,25 @@ import {
 import { MapPin, Phone, Mail, Clock, CheckCircle } from "lucide-react";
 
 export default function ContactoPage() {
+  const getEmailByLevel = (level: string) => {
+    const emailMapping: { [key: string]: string } = {
+      Administracion: "administracion@corazondejesus.edu.ar",
+      "Nivel Inicial": "secretariainicial@corazondejesus.edu.ar",
+      "Nivel Primario": "secretariaprimaria@corazondejesus.edu.ar",
+      "Nivel Secundario": "secretariasecundaria@corazondejesus.edu.ar",
+    };
+    return emailMapping[level] || "info@colegiocorazondejesus.edu.ar";
+  };
+
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     const formData = new FormData(e.currentTarget);
+    const selectedLevel = formData.get("Nivel") as string;
+    const targetEmail = getEmailByLevel(selectedLevel);
 
     try {
-      await fetch("https://formsubmit.co/jlofredo@muvinai.com", {
+      await fetch(`https://formsubmit.co/${targetEmail}`, {
         method: "POST",
         body: formData,
       });
@@ -75,16 +87,30 @@ export default function ContactoPage() {
                     value="Gracias por contactarnos. Hemos recibido tu mensaje y te responderemos pronto."
                   />
 
-                  <div className="space-y-2">
-                    <label htmlFor="nombre" className="text-sm font-medium">
-                      Nombre <span className="text-[#0a2d8f]">*</span>
-                    </label>
-                    <Input
-                      id="nombre"
-                      name="Nombre"
-                      placeholder="Tu nombre"
-                      required
-                    />
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div className="space-y-2">
+                      <label htmlFor="nombre" className="text-sm font-medium">
+                        Nombre <span className="text-[#0a2d8f]">*</span>
+                      </label>
+                      <Input
+                        id="nombre"
+                        name="Nombre"
+                        placeholder="Tu nombre"
+                        required
+                      />
+                    </div>
+
+                    <div className="space-y-2">
+                      <label htmlFor="apellido" className="text-sm font-medium">
+                        Apellido <span className="text-[#0a2d8f]">*</span>
+                      </label>
+                      <Input
+                        id="apellido"
+                        name="Apellido"
+                        placeholder="Tu apellido"
+                        required
+                      />
+                    </div>
                   </div>
 
                   <div className="space-y-2">
@@ -102,7 +128,7 @@ export default function ContactoPage() {
 
                   <div className="space-y-2">
                     <label htmlFor="telefono" className="text-sm font-medium">
-                      Teléfono
+                      Teléfono (opcional)
                     </label>
                     <Input
                       id="telefono"
@@ -112,18 +138,22 @@ export default function ContactoPage() {
                   </div>
 
                   <div className="space-y-2">
-                    <label htmlFor="nivel" className="text-sm font-medium">
-                      Nivel <span className="text-[#0a2d8f]">*</span>
+                    <label
+                      htmlFor="departamento"
+                      className="text-sm font-medium"
+                    >
+                      Departamento <span className="text-[#0a2d8f]">*</span>
                     </label>
                     <select
                       name="Nivel"
                       required
                       className="w-full h-10 px-3 rounded-md border border-input bg-background"
                     >
-                      <option value="">Selecciona un nivel</option>
-                      <option value="Jardin">Jardín</option>
-                      <option value="Primaria">Primaria</option>
-                      <option value="Secundaria">Secundaria</option>
+                      <option value="">Selecciona un departamento</option>
+                      <option value="Administracion">Administración</option>
+                      <option value="Nivel Inicial">Nivel Inicial</option>
+                      <option value="Nivel Primario">Nivel Primario</option>
+                      <option value="Nivel Secundario">Nivel Secundario</option>
                     </select>
                   </div>
 

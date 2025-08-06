@@ -73,7 +73,7 @@ export default function Footer() {
                   href="/niveles/jardin"
                   className="text-sm hover:text-white/80 transition-colors"
                 >
-                  Jardín de Infantes
+                  Nivel Inicial
                 </Link>
               </li>
               <li>
@@ -98,14 +98,6 @@ export default function Footer() {
                   className="text-sm hover:text-white/80 transition-colors"
                 >
                   Propuesta Complementaria
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/noticias"
-                  className="text-sm hover:text-white/80 transition-colors"
-                >
-                  Noticias
                 </Link>
               </li>
               <li>
@@ -136,14 +128,65 @@ export default function Footer() {
                 <Phone size={18} className="mr-2 flex-shrink-0" />
                 <p className="text-sm">(011) 4951-5123</p>
               </div>
-              <div className="flex items-center">
-                <Mail size={18} className="mr-2 flex-shrink-0" />
-                <a
-                  href="mailto:info@colegiocorazondejesus.edu.ar"
-                  className="text-sm hover:text-white/80 transition-colors"
-                >
-                  info@colegiocorazondejesus.edu.ar
-                </a>
+              <div className="flex items-start mb-3">
+                <Mail size={18} className="mr-2 mt-1 flex-shrink-0" />
+                <div className="space-y-1">
+                  <div>
+                    <p className="text-xs font-semibold text-gray-300">
+                      General:
+                    </p>
+                    <a
+                      href="mailto:info@colegiocorazondejesus.edu.ar"
+                      className="text-sm hover:text-white/80 transition-colors"
+                    >
+                      info@colegiocorazondejesus.edu.ar
+                    </a>
+                  </div>
+                  <div>
+                    <p className="text-xs font-semibold text-gray-300">
+                      Administración:
+                    </p>
+                    <a
+                      href="mailto:administracion@corazondejesus.edu.ar"
+                      className="text-sm hover:text-white/80 transition-colors"
+                    >
+                      administracion@corazondejesus.edu.ar
+                    </a>
+                  </div>
+                  <div>
+                    <p className="text-xs font-semibold text-gray-300">
+                      Nivel Inicial:
+                    </p>
+                    <a
+                      href="mailto:secretariainicial@corazondejesus.edu.ar"
+                      className="text-sm hover:text-white/80 transition-colors"
+                    >
+                      secretariainicial@corazondejesus.edu.ar
+                    </a>
+                  </div>
+                  <div>
+                    <p className="text-xs font-semibold text-gray-300">
+                      Nivel Primario:
+                    </p>
+                    <a
+                      href="mailto:secretariaprimaria@corazondejesus.edu.ar"
+                      className="text-sm hover:text-white/80 transition-colors"
+                    >
+                      secretariaprimaria@corazondejesus.edu.ar
+                    </a>
+                  </div>
+                  <div>
+                    <p className="text-xs font-semibold text-gray-300">
+                      Nivel Secundario:
+                    </p>
+                    <a
+                      href="mailto:secretariasecundaria@corazondejesus.edu.ar"
+                      className="text-sm hover:text-white/80 transition-colors"
+                    >
+                      secretariasecundaria@corazondejesus.edu.ar
+                    </a>
+                  </div>
+                </div>
               </div>
             </address>
             <div className="mt-4">
@@ -157,6 +200,9 @@ export default function Footer() {
           <p>
             &copy; {new Date().getFullYear()} Instituto Corazón de Jesús - Todos
             los derechos reservados
+          </p>
+          <p className="text-xs text-white/50 mt-2">
+            Sitio web desarrollado por un exalumno
           </p>
         </div>
       </div>

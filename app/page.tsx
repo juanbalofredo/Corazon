@@ -1,24 +1,22 @@
 import Hero from "@/components/hero";
 import MisionVision from "@/components/mision-vision";
-import Carrusel from "@/components/carrusel";
 import NivelesEducativos from "@/components/niveles-educativos";
-import Noticias from "@/components/noticias";
+import NoticiasClient from "@/components/noticias-client";
 import Contacto from "@/components/contacto";
-import PopupAnnouncement from "@/components/popup-announcement";
-import { getNoticias, getPopupData } from "@/lib/google-sheets";
+import PopupAnnouncementClient from "@/components/popup-announcement-client";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title:
     "Instituto Corazón de Jesús - Colegio Católico en Balvanera | Buenos Aires",
   description:
-    "Colegio Corazón de Jesús en Balvanera - Más de 100 años educando con amor. Jardín, primaria y secundaria católica con formación integral y valores cristianos. Hermanas Carmelitas Vedruna.",
+    "Colegio Corazón de Jesús en Balvanera - Más de 100 años educando con amor. Nivel inicial, nivel primario y nivel secundario católico con formación integral y valores cristianos. Hermanas Carmelitas Vedruna.",
   keywords:
-    "Instituto Corazón de Jesús, Corazón de Jesús, colegio Balvanera, instituto Balvanera, colegio católico Buenos Aires, escuela católica Balvanera, jardín Balvanera, primaria Balvanera, secundaria Balvanera, educación católica, Hermanas Carmelitas Vedruna",
+    "Instituto Corazón de Jesús, Corazón de Jesús, colegio Balvanera, instituto Balvanera, colegio católico Buenos Aires, escuela católica Balvanera, nivel inicial Balvanera, nivel primario Balvanera, nivel secundario Balvanera, educación católica, Hermanas Carmelitas Vedruna",
   openGraph: {
     title: "Instituto Corazón de Jesús - Colegio Católico en Balvanera",
     description:
-      "Más de 100 años educando con amor en Balvanera. Jardín, primaria y secundaria con formación integral y valores cristianos.",
+      "Más de 100 años educando con amor en Balvanera. Nivel inicial, nivel primario y nivel secundario con formación integral y valores cristianos.",
     url: "https://www.institutocorazondejesus.edu.ar",
     siteName: "Instituto Corazón de Jesús",
     images: [
@@ -37,10 +35,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default async function Home() {
-  const noticias = await getNoticias();
-  const popupData = await getPopupData();
-
+export default function Home() {
   return (
     <>
       <script
@@ -74,12 +69,11 @@ export default async function Home() {
         }}
       />
       <div className="container mx-auto px-4">
-        <PopupAnnouncement popupData={popupData} />
+        <PopupAnnouncementClient />
         <Hero />
         <NivelesEducativos />
         <MisionVision />
-        <Carrusel />
-        <Noticias noticias={noticias} />
+        <NoticiasClient />
         <Contacto />
       </div>
     </>

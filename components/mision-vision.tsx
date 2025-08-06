@@ -3,22 +3,58 @@ import { Heart, BookOpen, Users } from "lucide-react";
 
 export default function MisionVision() {
   return (
-    <section className="py-16 bg-gray-50" id="mision-vision">
+    <section
+      className="py-16 bg-[#0a2d8f]/5 mb-10 rounded-xl"
+      id="mision-vision"
+    >
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-[#0a2d8f] mb-2">
+          <h2 className="text-3xl font-bold text-[#0a2d8f] mb-6">
             Nuestra Identidad
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            El Instituto pertenece a la congregación de Hermanas Carmelitas de
-            la Caridad de Vedruna, fundada por Santa Joaquina, cuyo carisma se
-            orienta a la educación integral de los alumnos desde una visión
-            cristiana del hombre y del mundo.
-          </p>
+          <div className="max-w-4xl mx-auto">
+            <p className="text-gray-700 text-lg mb-6 leading-relaxed">
+              Somos una institución católica comprometida con la educación
+              integral, inspirada en el carisma de Santa Joaquina de Vedruna.
+              Nuestra comunidad educativa se caracteriza por:
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
+              <div className="flex items-start space-x-3">
+                <div className="w-2 h-2 bg-[#0a2d8f] rounded-full mt-2 flex-shrink-0"></div>
+                <p className="text-gray-700">
+                  Un ambiente familiar, cercano y acogedor
+                </p>
+              </div>
+              <div className="flex items-start space-x-3">
+                <div className="w-2 h-2 bg-[#0a2d8f] rounded-full mt-2 flex-shrink-0"></div>
+                <p className="text-gray-700">
+                  La formación en valores cristianos y humanos
+                </p>
+              </div>
+              <div className="flex items-start space-x-3">
+                <div className="w-2 h-2 bg-[#0a2d8f] rounded-full mt-2 flex-shrink-0"></div>
+                <p className="text-gray-700">
+                  El compromiso con la excelencia académica
+                </p>
+              </div>
+              <div className="flex items-start space-x-3">
+                <div className="w-2 h-2 bg-[#0a2d8f] rounded-full mt-2 flex-shrink-0"></div>
+                <p className="text-gray-700">
+                  La atención personalizada a cada estudiante
+                </p>
+              </div>
+              <div className="flex items-start space-x-3 md:col-span-2 justify-center">
+                <div className="w-2 h-2 bg-[#0a2d8f] rounded-full mt-2 flex-shrink-0"></div>
+                <p className="text-gray-700">
+                  El servicio preferencial a las familias más vulnerables
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <Card className="border-t-4 border-t-[#0a2d8f]">
+          <Card className="border-t-4 border-t-[#0a2d8f] bg-white border-none">
             <CardHeader className="pb-2">
               <div className="w-12 h-12 bg-[#0a2d8f]/10 rounded-full flex items-center justify-center mb-4">
                 <Heart className="h-6 w-6 text-[#0a2d8f]" />
@@ -36,7 +72,7 @@ export default function MisionVision() {
             </CardContent>
           </Card>
 
-          <Card className="border-t-4 border-t-[#0a2d8f]">
+          <Card className="border-t-4 border-t-[#0a2d8f] bg-white border-none">
             <CardHeader className="pb-2">
               <div className="w-12 h-12 bg-[#0a2d8f]/10 rounded-full flex items-center justify-center mb-4">
                 <BookOpen className="h-6 w-6 text-[#0a2d8f]" />
@@ -53,7 +89,7 @@ export default function MisionVision() {
             </CardContent>
           </Card>
 
-          <Card className="border-t-4 border-t-[#0a2d8f]">
+          <Card className="border-t-4 border-t-[#0a2d8f] bg-white border-none">
             <CardHeader className="pb-2">
               <div className="w-12 h-12 bg-[#0a2d8f]/10 rounded-full flex items-center justify-center mb-4">
                 <Users className="h-6 w-6 text-[#0a2d8f]" />
@@ -70,17 +106,6 @@ export default function MisionVision() {
               </p>
             </CardContent>
           </Card>
-        </div>
-
-        <div className="mt-12 text-center">
-          <blockquote className="italic text-xl text-gray-700 max-w-3xl mx-auto">
-            "Mira a la juventud a quien educas como antorcha que tienes que
-            encender para alumbrar a los que están en la casa y todos
-            glorifiquen al Padre que está en los cielos."
-            <footer className="text-sm mt-2 text-gray-500">
-              — Santa Joaquina de Vedruna
-            </footer>
-          </blockquote>
         </div>
       </div>
     </section>

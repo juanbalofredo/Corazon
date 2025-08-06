@@ -15,14 +15,14 @@ import {
 
 export const metadata = {
   title:
-    "Secundaria Instituto Corazón de Jesús | Bachillerato Católico Balvanera",
+    "Nivel Secundario Instituto Corazón de Jesús | Bachillerato Católico Balvanera",
   description:
-    "Secundaria Instituto Corazón de Jesús en Balvanera - Bachillerato católico con orientación en Ciencias Sociales y Humanidades. Formación integral para estudios superiores en Buenos Aires.",
+    "Nivel Secundario Instituto Corazón de Jesús en Balvanera - Bachillerato católico con orientación en Ciencias Sociales y Humanidades. Formación integral para estudios superiores en Buenos Aires.",
   keywords:
-    "secundaria Instituto Corazón de Jesús, secundaria Balvanera, bachillerato ciencias sociales, instituto secundario católico, orientación humanidades Buenos Aires, bachillerato católico Buenos Aires",
+    "nivel secundario Instituto Corazón de Jesús, nivel secundario Balvanera, bachillerato ciencias sociales, instituto nivel secundario católico, orientación humanidades Buenos Aires, bachillerato católico Buenos Aires",
   openGraph: {
     title:
-      "Secundaria Instituto Corazón de Jesús | Bachillerato Católico Balvanera",
+      "Nivel Secundario Instituto Corazón de Jesús | Bachillerato Católico Balvanera",
     description:
       "Bachillerato católico con orientación en Ciencias Sociales y Humanidades. Formación integral para estudios superiores.",
     url: "https://www.institutocorazondejesus.edu.ar/niveles/secundaria",
@@ -31,7 +31,7 @@ export const metadata = {
         url: "https://www.institutocorazondejesus.edu.ar/images/secundaria.webp",
         width: 1200,
         height: 630,
-        alt: "Secundaria Instituto Corazón de Jesús - Estudiantes en el instituto",
+        alt: "Nivel Secundario Instituto Corazón de Jesús - Estudiantes en el instituto",
       },
     ],
   },
@@ -42,13 +42,10 @@ export const metadata = {
 
 export default function SecundariaPage() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-blue-50">
       <div className="container mx-auto px-4 py-12">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-slate-600 to-blue-700 rounded-full mb-6">
-              <GraduationCap className="h-10 w-10 text-white" />
-            </div>
             <h1 className="text-4xl font-bold bg-gradient-to-r from-slate-700 to-blue-700 bg-clip-text text-transparent mb-4">
               Nivel Secundario
             </h1>
@@ -65,7 +62,7 @@ export default function SecundariaPage() {
           <div className="relative rounded-2xl overflow-hidden mb-12 h-80 shadow-2xl">
             <Image
               src="/images/secundaria.webp"
-              alt="Estudiantes de secundaria en el instituto"
+              alt="Estudiantes de nivel secundario en el instituto"
               fill
               className="object-cover object-[45%_70%]"
             />
@@ -96,7 +93,7 @@ export default function SecundariaPage() {
                       <h3 className="font-bold text-slate-700 mb-2">
                         Formación Académica
                       </h3>
-                      <p className="text-gray-700">
+                      <p className="text-gray-700 text-justify">
                         Ofrecemos una sólida formación académica que prepara a
                         nuestros estudiantes para los estudios superiores, con
                         especial énfasis en las ciencias sociales y humanidades,
@@ -115,7 +112,7 @@ export default function SecundariaPage() {
                       <h3 className="font-bold text-blue-700 mb-2">
                         Formación Personal
                       </h3>
-                      <p className="text-gray-700">
+                      <p className="text-gray-700 text-justify">
                         Acompañamos el desarrollo personal de cada estudiante,
                         promoviendo valores cristianos, habilidades
                         socioemocionales y el compromiso con la construcción de
@@ -134,7 +131,7 @@ export default function SecundariaPage() {
                       <h3 className="font-bold text-indigo-700 mb-2">
                         Orientación Vocacional
                       </h3>
-                      <p className="text-gray-700">
+                      <p className="text-gray-700 text-justify">
                         Brindamos un programa de orientación vocacional que
                         ayuda a nuestros estudiantes a descubrir sus talentos e
                         intereses, y a tomar decisiones informadas sobre su
@@ -153,7 +150,7 @@ export default function SecundariaPage() {
                       <h3 className="font-bold text-purple-700 mb-2">
                         Proyección Social
                       </h3>
-                      <p className="text-gray-700">
+                      <p className="text-gray-700 text-justify">
                         Fomentamos el compromiso social a través de proyectos
                         solidarios y de servicio comunitario, formando
                         ciudadanos responsables y comprometidos con la
@@ -166,13 +163,11 @@ export default function SecundariaPage() {
             </div>
 
             <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-8 shadow-xl">
-              <p className="text-gray-700 text-lg leading-relaxed text-center">
-                Nuestra propuesta educativa para el nivel secundario se basa en
-                la pedagogía Vedruna, que pone en el centro a la persona y
-                promueve un clima familiar, sencillo, cercano y alegre como
-                experiencia educativa fundamental. Buscamos formar jóvenes con
-                sólidos conocimientos académicos, valores cristianos y
-                compromiso social.
+              <p className="text-gray-700 text-lg leading-relaxed text-justify">
+                Nuestra propuesta educativa se basa en la pedagogía Vedruna, que
+                pone en el centro a la persona y promueve un clima familiar,
+                sencillo y alegre. Formamos jóvenes con sólidos conocimientos
+                académicos, valores cristianos y compromiso social.
               </p>
             </div>
           </div>
@@ -278,7 +273,7 @@ export default function SecundariaPage() {
                     <h3 className="font-bold text-gray-800 mb-2">
                       {actividad.title}
                     </h3>
-                    <p className="text-gray-600 text-sm">
+                    <p className="text-gray-600 text-sm text-justify">
                       {actividad.description}
                     </p>
                   </CardContent>

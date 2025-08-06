@@ -1,11 +1,11 @@
-"use client"
+"use client";
 
-import { useState, useEffect, useRef } from "react"
-import Link from "next/link"
-import Image from "next/image"
-import { Menu, X } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { cn } from "@/lib/utils"
+import { useState, useEffect, useRef } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { Menu, X } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 
 const navItems = [
   { name: "Inicio", href: "/" },
@@ -14,37 +14,39 @@ const navItems = [
     name: "Niveles",
     href: "#",
     submenu: [
-      { name: "Jardín", href: "/niveles/jardin" },
-      { name: "Primaria", href: "/niveles/primaria" },
-      { name: "Secundaria", href: "/niveles/secundaria" },
+      { name: "Nivel Inicial", href: "/niveles/jardin" },
+      { name: "Nivel Primario", href: "/niveles/primaria" },
+      { name: "Nivel Secundario", href: "/niveles/secundaria" },
     ],
   },
-  { name: "Noticias", href: "/noticias" },
   { name: "Contacto", href: "/contacto" },
-]
+];
 
 export default function Header() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-  const [activeSubmenu, setActiveSubmenu] = useState<string | null>(null)
-  const dropdownRef = useRef<HTMLDivElement>(null)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [activeSubmenu, setActiveSubmenu] = useState<string | null>(null);
+  const dropdownRef = useRef<HTMLDivElement>(null);
 
   const toggleSubmenu = (name: string) => {
-    setActiveSubmenu(activeSubmenu === name ? null : name)
-  }
+    setActiveSubmenu(activeSubmenu === name ? null : name);
+  };
 
   // Cerrar dropdown cuando se hace click fuera
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
-        setActiveSubmenu(null)
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target as Node)
+      ) {
+        setActiveSubmenu(null);
       }
-    }
+    };
 
-    document.addEventListener("mousedown", handleClickOutside)
+    document.addEventListener("mousedown", handleClickOutside);
     return () => {
-      document.removeEventListener("mousedown", handleClickOutside)
-    }
-  }, [])
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
@@ -59,15 +61,23 @@ export default function Header() {
               className="h-12 w-auto"
             />
             <div className="hidden md:block">
-              <h1 className="text-xl font-bold text-[#0a2d8f]">Instituto Corazón de Jesús</h1>
-              <p className="text-xs text-[#0a2d8f]">Hermanas Carmelitas de la Caridad Vedruna</p>
+              <h1 className="text-xl font-bold text-[#0a2d8f]">
+                Instituto Corazón de Jesús
+              </h1>
+              <p className="text-xs text-[#0a2d8f]">
+                Hermanas Carmelitas de la Caridad Vedruna
+              </p>
             </div>
           </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-6">
             {navItems.map((item) => (
-              <div key={item.name} className="relative group" ref={item.submenu ? dropdownRef : undefined}>
+              <div
+                key={item.name}
+                className="relative group"
+                ref={item.submenu ? dropdownRef : undefined}
+              >
                 {item.submenu ? (
                   <>
                     <button
@@ -75,8 +85,18 @@ export default function Header() {
                       onClick={() => toggleSubmenu(item.name)}
                     >
                       {item.name}
-                      <svg className="ml-1 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                      <svg
+                        className="ml-1 h-4 w-4"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M19 9l-7 7-7-7"
+                        />
                       </svg>
                     </button>
                     <div
@@ -84,7 +104,7 @@ export default function Header() {
                         "absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-10 transition-all duration-150",
                         activeSubmenu === item.name
                           ? "opacity-100 visible"
-                          : "opacity-0 invisible group-hover:opacity-100 group-hover:visible",
+                          : "opacity-0 invisible group-hover:opacity-100 group-hover:visible"
                       )}
                     >
                       {item.submenu.map((subitem) => (
@@ -100,7 +120,10 @@ export default function Header() {
                     </div>
                   </>
                 ) : (
-                  <Link href={item.href} className="text-gray-700 hover:text-[#0a2d8f] font-medium">
+                  <Link
+                    href={item.href}
+                    className="text-gray-700 hover:text-[#0a2d8f] font-medium"
+                  >
                     {item.name}
                   </Link>
                 )}
@@ -109,8 +132,17 @@ export default function Header() {
           </nav>
 
           {/* Mobile menu button */}
-          <Button variant="ghost" size="icon" className="md:hidden" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
-            {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          <Button
+            variant="ghost"
+            size="icon"
+            className="md:hidden"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          >
+            {mobileMenuOpen ? (
+              <X className="h-6 w-6" />
+            ) : (
+              <Menu className="h-6 w-6" />
+            )}
           </Button>
         </div>
 
@@ -127,12 +159,19 @@ export default function Header() {
                     >
                       {item.name}
                       <svg
-                        className={`h-4 w-4 transition-transform ${activeSubmenu === item.name ? "rotate-180" : ""}`}
+                        className={`h-4 w-4 transition-transform ${
+                          activeSubmenu === item.name ? "rotate-180" : ""
+                        }`}
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
                       >
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M19 9l-7 7-7-7"
+                        />
                       </svg>
                     </button>
                     {activeSubmenu === item.name && (
@@ -165,5 +204,5 @@ export default function Header() {
         )}
       </div>
     </header>
-  )
+  );
 }
